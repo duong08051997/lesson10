@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>di chuyển quả bóng</title>
+</head>
+<body>
+        <form>
+            <img id ="myImg" src="img/ball.png" height="365" width="393"/>
+        </form>
+
+</body>
+    <script>
+      let up = 1;
+      let ball = 0;
+      setInterval(move,1);
+      function move() {
+        if ((ball > 600) || (ball < 0)) {
+                up = -up;
+         }
+                ball += up;
+           document.getElementById('myImg').style.position = 'relative';
+           document.getElementById('myImg').style.left = ball + 'px';
+}
+    </script>
+</html>

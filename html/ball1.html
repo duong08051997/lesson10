@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <form>
+        <img id="myImg" src="img/ball.png" height="365" width="393"/>
+        <input type="button" value="click me" onclick="moveRight()" />
+        </form>
+    <script>
+        let img = null;
+            img = document.getElementById('myImg');
+            function init() {
+                img = document.getElementById('myImg');
+                img.style.position = 'relative';
+                img.style.left = '0px';
+
+            }function moveRight() {
+                img.style.left = parseInt(img.style.left)+ 10 +'px';
+
+console.log(1)
+        }
+        window.onload = init;
+
+    </script>
+</body>
+</html>
